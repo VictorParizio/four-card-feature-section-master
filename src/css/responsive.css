@@ -1,0 +1,17 @@
+@media (max-width: 1120px) {
+    .page .feature {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .page .info .title,
+    .page .info .sub-title {
+        font-size: 2.7rem;
+    }
+
+    .page .info .description {
+        max-width: 380px;
+        padding-top: 16px;
+    }
+}

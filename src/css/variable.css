@@ -1,0 +1,11 @@
+:root{
+--builder: hsl(0, 78%, 62%);
+--supervisor: hsl(180, 62%, 55%);
+--karma: hsl(34, 97%, 64%);
+--calculator: hsl(212, 86%, 64%);
+
+--destaque: hsl(234, 12%, 34%);
+--base: hsl(229, 6%, 66%);
+--page: hsl(0, 0%, 98%);
+
+}

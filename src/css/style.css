@@ -1,0 +1,109 @@
+.page {
+    background-color: var(--page);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px 0;
+}
+
+.page .info {
+    text-align: center;
+}
+
+.page .info .title,
+.page .info .sub-title {
+    font-size: 3.5rem;
+    color: var(--destaque);
+}
+
+.page .info .description {
+    max-width: 500px;
+    padding-top: 16px;
+}
+
+.page .feature {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px 0;
+    gap: 30px;
+}
+
+.page .feature .card {
+    width: 340px;
+    height: 240px;
+    box-shadow: 5px 15px 20px rgba(169, 172, 219, 0.5);
+    border-radius: 7px;
+    padding: 30px;
+    position: relative;
+}
+
+.page .feature .card h3 {
+    color: var(--destaque);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.page .feature .card p {
+    font-size: 1.2rem;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.page .feature .card .ico {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.page .feature .supervisor::before,
+.page .feature .builder::before,
+.page .feature .karma::before,
+.page .feature .calculator::before {
+    content: '';
+    width: 340px;
+    height: 5px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 7px 7px 0 0;
+    top: 0;
+    left: 0;
+}
+
+.page .feature .supervisor::before {
+    background-color: var(--supervisor);
+}
+
+.page .feature .builder::before {
+    background-color: var(--builder);
+}
+
+.page .feature .karma {
+    margin-top: 30px;
+}
+
+.page .feature .karma::before {
+    background-color: var(--karma);
+}
+
+.page .feature .calculator::before {
+    background-color: var(--calculator);
+}
+
+.attribution,
+.attribution a {
+    padding: 20px 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--karma);
+    transition: 0.2s ease-in-out;
+}
+
+.attribution a {
+    color: var(--supervisor);
+}
+
+.attribution a:hover {
+    color: var(--calculator);
+    font-weight: 700;
+}
